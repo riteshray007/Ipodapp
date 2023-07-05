@@ -1,0 +1,227 @@
+* {
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+}
+
+.app {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 70px;
+      justify-content: center;
+}
+
+.ipodmain {
+
+      height: 420px;
+      width: 260px;
+      position: relative;
+
+      border: 2px solid black;
+      border-radius: 10px;
+      background-color: #E0D0C1;
+      opacity: 0.8;
+      background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #E0D0C1 10px), repeating-linear-gradient(#A76D60, #60160097);
+}     
+
+.app > :last-child {
+      border: none;
+      margin-top: 2px;
+      transform: rotatex(180deg) ; 
+      mask-image: linear-gradient(transparent 80%, white 110%);
+}
+
+
+.center {
+      display: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+}
+
+.displayarea {
+      width: 98%;
+      height: 228px;
+      border: 2px solid black;
+      border-radius: 10px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      margin-top: 5px;
+}
+
+.controllerpad {
+      height: 160px;
+      width: 150px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      border-radius: 45%;
+      align-items: center;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+}
+
+.controllerpad * {
+      position: absolute;
+      width: 40px;
+      height: 30px;
+      /* border : 1px solid blue; */
+      /* cursor: pointer; */
+      /* color: #F7F9F9; */
+      /* filter: brightness(0.2) invert(.2) sepia(.0) hue-rotate(100deg) saturate(700%); */
+      /* filter: brightness(0.5) saturate(0%) hue-rotate(0deg);  */
+      filter: grayscale(2%)
+      /* filter: hue-rotate(0deg); */
+
+}
+
+.child1 {
+      top: 10px;
+      margin-left: -10px;
+      font-size: xx-large;
+      font-weight: 800;
+      width: 70px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+      /* font-weight: 800; */
+      cursor: pointer;
+      /* border: 1px solid black; */
+      user-select: none;
+}
+
+.child2 {
+      right: 0px;
+}
+
+.child2 img {
+      height: 20px;
+      width: 30px;
+}
+
+.child3 {
+      bottom: 10px;
+}
+
+.child3 img {
+      height: 25px;
+      width: 35px;
+}
+
+.child4 {
+      left: 11px;
+}
+
+.child4 img {
+      height: 20px;
+      width: 30px;
+}
+
+.okeybutton {
+      position: absolute;
+      width: 45px;
+      height: 45px;
+      top: 75%;
+      left: 42%;
+      border: 1px solid white;
+      background-color: #A76D60;
+      border-radius: 50%;
+      margin-top: -10px;
+}
+
+.displayarea {
+      background-image: url('https://images.unsplash.com/photo-1616272963049-da2d8efc0c57?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YnJvd24lMjBhZXN0aGV0aWN8ZW58MHx8MHx8fDA%3D&w=1000&q=80');
+      background-position: center;
+      background-size: cover;
+}
+
+.displayheader {
+      margin: 10px 15px;
+}
+
+.displaypack {
+      border: 1px solid;
+      height: 100%;
+      width: 60%;
+      background-color: aliceblue;
+      border-radius: 10px;
+      overflow: hidden;
+}
+
+.optionslist {
+      margin: 10px 0px;
+      list-style: none;
+      overflow: scroll;
+      border-top: 1px solid black;
+      height: 79%;
+      /* border: 1px solid gold; */
+}
+
+.optionslist::-webkit-scrollbar {
+      display: none;
+}
+
+.optionslist li {
+      min-width: 100%;
+      min-height: 40px;
+      display: flex;
+      font-weight: 900;
+      justify-content: center;
+      align-items: center;
+
+}
+
+.greatericon {
+      height: 15px;
+      width: 15px;
+      margin: 1px 5px;
+}
+
+.selectedlistitem {
+      display: flex;
+      justify-content: center;
+      background-color: antiquewhite;
+}
+
+.submenupics {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* border: 1px solid red; */
+      border-radius: 10px;
+      background-color: #F1EAE4;
+      overflow: hidden;
+      font-family: 'Pacifico', cursive;
+}
+
+.picinsubmenu {
+      width: 70%;
+      height: 70%;
+}
+
+
+.picinsong {
+      width: 50%;
+      height: 60%;
+}
+
+audio::-webkit-media-controls-panel {
+      background-color: #F1EAE4;
+      /* z-index: -1; */
+}
+
+audio {
+      width: 112%;
+      /* margin-left: -1px; */
+      margin-top: 0px;
+      margin-bottom: -10px;
+}
